@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>ICS4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="../CSS/table.css">
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+	  <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS4U-ICS4C/2019-Spring-4" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a> 
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS4</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="">
+    <h1 class="w3-xxlarge"><b>Module 8 (Ongoing)</b></h1>
+    <p style="font-weight:initial"></p>
+  </div> 
+	
+  <!-- M8 -->
+  <div class="w3-container" id="M8" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Software Development Project</b></h1>
+    <p style="font-weight:initial">The tasks in this module will be ongoing throughout the semester, culminating in the delivery of a final software product. All stages of the development process will be documented in a final written formal report. Following is your to-do/to-know list for this module</p>
+
+    <ol style="font-weight:initial">
+      <li>Review <a href="../Summative/SDev.docx">tentative project outline</a></li>
+      <li>Select a project team and submit an initial proposal <a href="">here</a>.</li>
+      <li>Initial 'client' check-in meeting: TBD</li>
+      <li>Submit "Problem Analysis" and "Planning" phases: TBD. (Module 4 Assignment I) </li>
+      <li>Create a team GitHub project board (see below): TBD</li>
+      <li>Present software product to client (our class)</li>
+      <li>Submit a formal written report. <a href="../Summative/Report_Template.docx">Here's a template</a> to guide you.</li>
+    </ol>
+  </div>
+
+  <!-- Project Boards in GH -->
+  <div class="w3-container" id="M5" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>GH Projects</b></h1>
+    <p style="font-weight:initial">From your team repository, create a Project. Then create a <a href="https://help.github.com/articles/creating-a-project-board/">"project board"</a> for your software project.</p>
+    <img src="../Images/gh_projects.png">
+  </div>
+
+  <!-- Project Languages -->
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Project Collaboration</b></h1>
+    <p style="font-weight:initial"></p>
+    <table id="languages">
+	<tr><th>Team</th>	<th>HTML/CSS</th><th>JS</th>	<th>PHP</th>	<th>Python</th	><th>django</th>	<th>SQL</th>	<th>C#</th>	<th>Unity2018</th></tr>
+	<tr><td>FW, NH</td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>		<td> </td>	<td>x</td>	<td>x</td></tr>
+	<tr><td>HT, AC</td>	<td>x</td>	<td>x</td>	<td> </td>	<td>x</td>	<td> </td>		<td> </td>	<td> </td>	<td> </td></tr>	    
+	<tr><td>AZ, YP, S</td>	<td>x</td>	<td>x</td>	<td> </td>	<td>x</td>	<td> </td>		<td>x</td>	<td>x</td>	<td> </td></tr>
+	<tr><td>K, A, M</td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>		<td> </td>	<td> </td>	<td> </td></tr>
+	<tr><td>MW, MS, JC</td>	<td>x</td>	<td>x</td>	<td>x</td>	<td>x</td>	<td>x</td>		<td>x</td>	<td> </td>	<td> </td></tr>
+	<tr><td>T, T, R, V</td>	<td>x</td>	<td> </td>	<td> </td>	<td>x</td>	<td> </td>		<td> </td>	<td> </td>	<td> </td></tr>	    
+    </table>
+  </div>
+
+  <!-- Important Dates -->
+  <div class="w3-container" id="M5" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Important Dates</b></h1>
+    <p style="font-weight:initial"></p>
+	
+    <!-- Software Product Report and Presentation -->
+    <p style="font-weight:initial">Report: <b>TBD</b> at the latest. No exceptions.</p>
+    <p style="font-weight:initial">Presentation days: <b>TBD</b></p><br>
+    <p style="font-weight:initial">Presenters will be selected randomly on <b>TBD</b>, so every group must be prepared to present. Attendance on all three days is mandatory, as this is a summative assessment</p><br>
+	
+    <!-- Exam Dates -->
+    <p style="font-weight:initial">Practical Coding Exam: <b>TBD</b></p>
+	  <p style="font-weight:initial">Formal Written Exam: <b>TBD</b></p>
+
+
+  </div>
+	    
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS4U-ICS4C">github.com/ICS4U-ICS4C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+
+<!--END OF PAGE CONTENT-->
+    
+		
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
