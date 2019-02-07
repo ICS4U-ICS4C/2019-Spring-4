@@ -1,1 +1,1 @@
-https://ics4u-ics4c.github.io/ICS4U-ICS4C-2019-Spring-4/
+https://ics4u-ics4c.github.io/2019-Spring-4/
