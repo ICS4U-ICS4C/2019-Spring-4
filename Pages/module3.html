@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<title>ICS4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+	  <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS4U-ICS4C/2019-Spring-4" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a>
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a>
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS4</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="">
+    <h1 class="w3-xxlarge"><b>Module 3 (April 1-12)</b></h1>
+    <p style="font-weight:initial">  </p>
+  </div> 
+	
+  <!-- M3 -->
+  <div class="w3-container" id="M3" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Python Style</b></h1>
+    <p style="font-weight:initial"></p>
+    <ul style="font-weight:initial">
+        <li>Refer to the <a href="../PythonNotes/pep8.pdf">Python Style Guide</a> for more explicit style recommendations. Pay particular attention to the section on comments.
+    </ul>    
+
+<!--Codesters logins-->
+    <h1 class="w3-xlarge w3-text-green"><b>Codesters</b></h1>
+    <p style="font-weight:initial">
+    </p>
+    <ul style="font-weight:initial">
+      <li>Explore codesters intro activities to see an application of classes for animation</li>
+      <li>Visit codesters.com and Log in with class key: 972f81</li>
+      <li>FYI: If you like working with codester's graphics library, you can install the <a href="https://github.com/codestersnyc/codesters-graphics">Codesters Module in Python</a>. You might not be able to pip install on school computers, but can try it at home</li>
+      <li>Also For Your Interest: if you're curious as to how the codesters platform works, and you're already familiar with HTML/CSS/JS/JQuery, open the developer's console to see how it's set up</li>
+    </ul>
+    <br>	      
+    </p>
+
+<!--Software Dev Stage 1: Proposal -->
+    <h1 class="w3-xlarge w3-text-green"><b>Software Development Project Stage 1</b></h1>
+    <p style="font-weight:initial">
+    </p>
+    <ul style="font-weight:initial">
+      <li>Prepare to submit problem definition for Friday Oct 19</li>
+      <li>See <a href="module8.html">Module 8: tentative project outline</a> for details</li>
+      </ul>
+    <br>	      
+    </p>
+
+<!--Encryption Intro-->
+    <h1 class="w3-xlarge w3-text-green"><b>Encryption</b></h1>
+    <p style="font-weight:initial">Some recommended resources about encryption</p>
+    <ul style="font-weight:initial">
+      <li><a href="https://www.xarg.org/tools/caesar-cipher/">Caesar Cipher decryption tool</a></li>
+      <li>Here's an interesting <a href="https://www.khanacademy.org/computing/computer-science/cryptography">Khanacademy series</a> about cryptography</li>
+      <li>Simon Singh's <a href="https://simonsingh.net/books/the-code-book/the-book/">The Code Book</a>, about the history of encryption and the secrets of codebreaking, is an excellent read</li>
+      <li><a href="https://www.eff.org/">EFF</a>, is a foundation dedicated to defending digital privacy rights. Check out their 
+	      website and join their mailing list to stay informed about the ever-changing landscape of online privacy</li>
+    </ul>
+    <br>	      
+    </p>
+	
+<!--File IO-->
+    <h1 class="w3-xlarge w3-text-green"><b>File IO and Encryption</b></h1>
+    <p style="font-weight:initial">
+    </p>
+    <ul style="font-weight:initial">
+      <li>Can you explain how the secret message, "Hello my name is Simon", was encrypted in each of the following?</li>
+	<ol><li>"Ellohay my amenay is imonsay"</li><li>"Ifmmp nz obnf jt tjnpo"</li><li>"Jraap zu mszr od dozpm"</li></ol>
+      <li>Here's a <a href="https://www.codecademy.com/courses/learn-python/lessons/file-inputoutput/exercises/see-it-to-believe-it">Codecademy tutorial</a> about File I/O for reference</li>
+    </ul>
+    <br>	      
+    </p>
+	
+  
+<!-- Intro to Matrices -->
+    <h1 class="w3-xlarge w3-text-green"><b>Intro to Matrices and Matrix Operations</b></h1>
+    <p style="font-weight:initial">
+    </p>
+    <ul style="font-weight:initial">
+      <li>Complete the introductory tutorial on Matrices on <a href="https://www.khanacademy.org/math/precalculus/precalc-matrices">Khanacademy</a></li>
+      <li>Whether you just watch the videos, just read the notes provided, or find a preferable tutorial on your own, you should be able to complete Khanacademy Quizzes 1, 2, and 3:</li>
+	  <ol>
+	    <ul>Matrix elements, dimensions, representing linear systems, row operations</ul>
+		<ul>Matrix addition and subtraction, scalar multiplication</ul>
+		<ul>Matrix multiplication, transformation</ul>
+	  </ol>
+      <li>What does this have to do with Comp Sci? Read this <a href="https://www.rdmag.com/news/2013/12/matrices-have-broad-ramifications-computer-science">article by Larry Hardesty, MIT</a></li>
+    </ul>
+    <br>	      
+    </p>
+	
+    <!--Review for Quiz-->
+    <h1 class="w3-xlarge w3-text-green"><b>Review for Quiz</b></h1> 
+      <ul style="font-weight:initial">
+	<li>File IO in Python (open, close, read, write)</li>
+	<li>Codecademy tutorial content</li>
+	<li><a href="https://www.programiz.com/python-programming/matrix">See: What is a Matrix? Python Matrices (nested Lists example)</a></li>
+        <li>Khanacademy tutorial content, excluding transformations</li>
+      </ul>
+    <br>	      
+  
+
+
+    <p style="margin-top:30px"><b><a href="">Assignment 3: April 12 2019</a></b></p>
+    <p><b>Quiz 3: April 5 2019</b> 
+      <a href="https://github.com/ICS4U-ICS4C/2019-Spring-4/blob/gh-pages/QTopics/QT3.pdf">Python topics to Review</a>
+ 	<div style="font-weight:initial">Note that in addition to Python 'Topics to Review', any material presented in this module is fair 
+		  game for the quiz (including Matrices)
+	</div>
+    </p>
+  </div>
+  
+  
+  
+</div>
+
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS4U-ICS4C">github.com/ICS4U-ICS4C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+
+
+<!--END OF PAGE CONTENT-->
+		
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
