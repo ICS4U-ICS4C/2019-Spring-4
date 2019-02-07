@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>ICS4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../CSS/main.css">
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=py&amp;skin=default"></script>
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+	  <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS4U-ICS4C/2019-Spring-4" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a>
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a>
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS4</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+ 
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="">
+    <h1 class="w3-xxlarge"><b>Module 4 (April 15 - 26)</b></h1>
+    <p style="font-weight:initial">In this module, we will focus on testing our code.</p>
+  </div> 
+	
+  <!-- Testing -->
+  <div class="w3-container" id="M4" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Testing Your Code</b></h1>
+    <p style="font-weight:initial"> 
+    Read the following articles from The Hitchhiker's Guide to Python:
+    </p>
+    <ol style="font-weight:initial">
+      <li><a href="https://docs.python-guide.org/writing/structure/">Structuring Your Project</a></li>
+      <li><a href="https://docs.python-guide.org/writing/tests/">Testing Your Code</a></li>
+      <li><a href="https://docs.pytest.org/en/latest/getting-started.html">Examples for using pytest</a></li>
+    </ol>
+  </div>	
+
+  <!--Testing Examples-->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Some Testing Examples</b></h1>
+    
+    <!-- Unittest Example -->
+    <figcaption style="margin-top:35px;">Unittest (docs.python-guide.org)</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
+    import unittest
+
+    class TestStringMethods(unittest.TestCase):
+
+        def test_upper(self):
+            self.assertEqual('foo'.upper(), 'FOO')  # Edit FOO to see fail output
+
+        def test_isupper(self):
+            self.assertTrue('FOO'.isupper())
+            self.assertFalse('Foo'.isupper())
+
+        def test_split(self):
+            s = 'hello world'
+            self.assertEqual(s.split(), ['hello', 'world'])
+            # check that s.split fails when the separator is not a string
+            with self.assertRaises(TypeError):
+                s.split(2)
+
+    if __name__ == '__main__':
+        unittest.main()
+    </code></pre>
+
+    <!-- Pytest Example -->
+    <figcaption style="margin-top:35px;">Pytest (https://docs.pytest.org)</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
+    def inc(x):
+        return x + 1
+
+    def test_answer():
+        assert inc(3) == 5 #Fails, since inc(3) is 4, not 5
+    </code></pre>
+
+    <!-- Doctest Example -->
+    <figcaption style="margin-top:35px;">Doctest (https://docs.python-guide.org/)</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial;"> 
+    def square(x):
+        """Return the square of x.
+
+        >>> square(2)
+        4
+        >>> square(-2)
+        4
+        """
+
+        return x * x
+
+    if __name__ == '__main__':
+        import doctest
+        doctest.testmod() # Expect no output if everything passes
+    </code></pre>
+    <a href="https://docs.python.org/3/library/doctest.html#module-doctest" style="font-weight:initial">Here are more thorough examples using doctest</a>
+  </div>
+	
+  <!-- Test Suites -->
+  <div class="w3-container" id="M4" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Creating Test Suites</b></h1>
+    <p style="font-weight:initial"> 
+    Sample exercises from CSC108:
+    </p>
+    <ol style="font-weight:initial">
+      <li><a href="../Exercises/broken_is_teenager.pdf">Is Teenager</a></li>
+      <li><a href="../Exercises/broken_all_fluffy.pdf">All Fluffy</a></li>
+      <li><a href="../Exercises/testing_worksheet.pdf">Choosing Test Cases Worksheet</a></li>
+    </ol>
+  </div>
+	
+  <!-- Student Sample Solutions (testing applied to asst 3:encryption) -->
+  <div class="w3-container" style="margin-top:35px">
+  <h1 class="w3-xlarge w3-text-green"><b>Our Class's Brilliant Solutions</b></h1>
+    <p style="font-weight:initial"> 
+      Link to your code to show us something special you did with either encryption or testing or both! 
+    </p>
+    <br>
+    <div class="thirdrow">
+      <div class="excontainer">
+        <a href="../Brilliant/YA.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=YA" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/TA.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=TA" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/AC.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=AC" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/JC.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=JC" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/VG.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=VG" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/NH.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=NH" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/TK.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=TK" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/RP.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=RP" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/KS.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=KS" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/AS.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=AS" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/MS.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=MS" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/MSD.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=MSD" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/HT.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=HT" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/ST.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=ST" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/FW.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=FW" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/MW.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=MW" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/AZ.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=AZ" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/SP.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=SP" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+    </div>
+  </div>	  
+	  	
+	
+  <!-- Assessments -->
+  <div class="w3-container" style="margin-top:35px;">
+    <p><b>Assignment 4: April 26 2019</b>
+      <ol>
+        <li>Submit Project Analysis and Planning phases of Software Development Project. Upload a file, Analysis_and_planning.docx, and all supporting docs to your team repo by due date</li> 
+	<li>Edit your Encryption Assignment to include testing code and resubmit <a href="">here</a></li>
+      </ol>
+      <div style="font-weight:initial">In lieu of the quiz, there is a two-part assignment for this module
+      </div>
+    </p>
+  </div>
+    
+
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS4U-ICS4C">github.com/ICS4U-ICS4C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+</div>
+
+<!--END OF PAGE CONTENT-->
+		
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
