@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>ICS4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+	  <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS4U-ICS4C/2019-Spring-4" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a>
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a>
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS4</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="">
+    <h1 class="w3-xxlarge"><b>Module 2 (Marrch 18 - 29)</b></h1>
+    <p style="font-weight:initial">The main focus of this Module will be exploring Object-Oriented Programming (OOP) in Python. 
+	    We will practice communicating information about our code by writing properly formatted docstrings and UMLs.
+    </p>
+  </div> 
+	
+  <!-- Intro to OOP -->
+  <div class="w3-container" id="M1" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Intro to OOP</b></h1>
+    <p style="font-weight:initial">
+    </p>
+
+    <ol style="font-weight:initial">
+      <li>Read over <a href="../PythonNotes/Python_OOP_Primer.pdf">this intro to Python OOP</a></li>
+      <li>You may use the following questions to guide your reading:</li>
+      <ul>
+        <li>Explain the benefits of object-oriented programming</li>
+        <li>What is the difference between a class and an object</li>
+        <li>What is the difference between properties and methods of a class</li>
+        <li>What is code reuse? How does it relate to inheritance?</li>
+        <li>What is polymorphism? How does it relate to methods?</li>
+      </ul>
+      <li><a href="../PythonNotes/A2Draft.pdf">Here is a draft of this Module's assignment</a>, if you want to get a head start. It's still a work in progress, but essentially you will be asked to create a simple game using classes. It doesn't have to be a wizard battle</li>
+      <li><a href="https://www.codecademy.com/courses/learn-python/lessons/introduction-to-classes/exercises/why-use-classes">Try the Codecademy tutorial for a step-by-step walk-through of classes in Python</a></li>
+      <!-- <li>For further explanation, watch T.Payne's Python OOP video below. Beware, he uses Python 2 in his demos</li> -->
+    </ol>
+    <!--
+    <iframe width="336" height="189" src="https://www.youtube.com/embed/pxbdnrjf-Uc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    -->
+  </div>
+	
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>OOP UMLs</b></h1>
+    <p style="font-weight:initial">
+    </p>
+
+    <p>Watch T.Payne's UML video below and try the exercises at the end.</li></p>
+    <br>
+    <iframe width="336" height="189" src="https://www.youtube.com/embed/U3B5z2HQlaQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+	  
+    <p style="margin-top:40px"><b><a href="">Assignment 2: March 22 2019</a></b></p>
+    <p><b>Quiz 2: March 29 2019</b>
+      <!--<a href="https://github.com/ICS4U-ICS4C/2019-Spring-4/blob/gh-pages/QTopics/QT2.pdf">Python topics to Review</a>-->
+ 	<div style="font-weight:initial">Note that any material presented in this module is fair game for the quiz (except UMLs video) 
+	</div>
+    </p>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS4U-ICS4C">github.com/ICS4U-ICS4C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+
+
+<!--END OF PAGE CONTENT-->
+    
+		
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
