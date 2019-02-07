@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>ICS4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=py&amp;skin=default"></script>
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+	  <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS4U-ICS4C/2019-Spring-4" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a> 
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS4</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="">
+    <h1 class="w3-xxlarge"><b>Module 7 (May 27 - June 7)</b></h1>
+    <p style="font-weight:initial">The main focus of this Module will be Data Analysis and Visualization in Python, and some exam prep. We'll also explore Graphical User Interfaces with Python</p>
+  </div> 
+
+  <!-- Written Exam Review
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Written Exam Review</b></h1>
+    <p style="font-weight:initial"><a href="../Summative/ICS4 Exam Review.docx">Topics to review</a></p>
+  </div>
+  -->
+	
+  <!-- Practical Exam Practice
+  <div class="w3-container" id="M5" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Python Practical Exam Practice</b></h1>
+    <p style="font-weight:initial">Note: THe practical exam will be completed on class computers in Idle, no internet, so you may want to practice under those conditions</p>
+    <p style="font-weight:initial">Files for exercises: <a href="../Exercises/postal_codes.txt">postal_codes.txt</a>, </p>
+  -->  
+	
+    <!-- Sample exercises
+    <figcaption style="margin-top:35px;">You will be asked to create functions, given their docstrings, something like the problems below. For a sample exam, check the Outbox.</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
+   # Practice 1: write a function according to the docstring description
+	
+   def postalValidation(postalCode):
+   """ (str) -> bool
+   Returns True if postal code entered by user is at least 3 characters and first 3 characters 
+   match a postal code in postal_codes.txt 
+   >>>piostalValidation('m6h')
+   True
+   >>>postalValidation('m6')
+   False
+   >>>postalValidation('LLK')
+   False
+   """
+   # Practice 2: write a function according to the docstring description. 
+   def isAutomorphic(num1):
+   """ (int) -> bool
+   Returns True iff the square of the integer, num1, ends in the same digits as num1 itself. 
+   Single-digit numbers are considered Automorphic.
+	
+   >>>isAutomorphic(25)
+   True
+   >>>isAutomorphic(13)
+   False
+   """
+   # Practice 3: write a function according to the docstring description. 
+   def evenDigs(lower, upper):
+   """ (int, int) -> str
+   Write a program, which will find all numbers within a range, defined by integers lower and upper, whose digits 
+   are all even. The numbers obtained should be printed in a comma-separated sequence on a single line.
+	
+   >>> evenDigs(900, 2070) 
+   2000,2002,2004,2006,2008,2020,2022,2024,2026,2028,2040,2042,2044,2046,2048,2060,2062,2064,2066,2068
+   >>> evenDigs(100, 150) 
+   """
+	
+      </code>
+    </pre>
+   -->
+  </div>		  
+
+	
+  <!-- GUIS -->
+  <div class="w3-container" id="M5" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Python GUIs (and exam procrastination)</b></h1>
+    <p style="font-weight:initial"></p>
+    <ol style="font-weight:initial">
+      <li><a href="https://www.freecodecamp.org/news/tetris-python-tutorial-pygame/">Make a tetris game in Python</a></li>
+      <li></li>
+    </ol>
+  </div>	
+	
+  <!-- Data Visualization -->
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Python Data Visualization</b></h1>
+    <p style="font-weight:initial">  
+    </p>
+    <ol style="font-weight:initial">
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+
+  <!-- Assessments -->
+  <div class="w3-container" style="margin-top:30px">
+    <p style="margin-top:30px"><b><a href="">Assignment 7: June 7 2019</a></b></p>
+    <p><b>Quiz 7: May 31 2019</b>
+      <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/QTopics/QT7.pdf">Python topics to Review</a>
+ 	<div style="font-weight:initial">Note that in addition to Python 'Topics to Review', any material presented in this module is fair 
+		  game for the quiz 
+	</div>
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS4U-ICS4C">github.com/ICS4U-ICS4C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+<!--END OF PAGE CONTENT-->    
+		
+	
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
