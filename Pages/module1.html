@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>ICS4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+	  <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS4U-ICS4C/2018-Fall-4" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a>
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a>
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+ 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS4</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="">
+    <h1 class="w3-xxlarge"><b>Module 1 (Feb 25 - March 8)</b></h1>
+    <p style="font-weight:initial">The main focus of this Module will be problem solving using Python Loops, Lists, and String 
+	    Manipulation, as well as properly formatted functions and docstrings. Since it is relevant to string manipulation, 
+	    we will also briefly review number systems, character mapping, and byte sequences. In addition to Python 'Topics to Review' 
+	    highlighted on the skills worksheet, any material presented in this module is fair game for the quiz.
+    </p>
+  </div> 
+
+  <!-- GitHub Pages -->
+  <div class="w3-container" id="M1" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>More GitHub Pages</b></h1>
+    <ol style="font-weight:initial">
+      <li>Get your GitHub webpage up and running (See Module 0 for instructions)</li>
+      <li>Keep usng GitHub workflow. If you're still confused, see freecodecamp's videos below</li>
+    </ol>
+    <br>	  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vR-y_2zWrIE?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF" frameborder="30" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div> 
+	
+  <!-- Counting Systems, ASCII, Unicode, Character Mapping -->  
+  <div class="w3-container" id="M1" style="margin-top:30px">  
+    <h1 class="w3-xlarge w3-text-green" style="margin-top:30px"><b>Counting Systems, ASCII, Unicode, Character Mapping</b></h1>
+    <p style="font-weight:initial"></p>
+    <ol style="font-weight:initial">
+      <li>Be familiar with various Number Systems (Unary/Binary/Hexadecimal/Decimal), their advantages and their uses</li>
+      <li>Understand how character mapping works, in general terms, with <a href="http://www.asciitable.com/">ASCII</a>, UNICODE, UTF-8, UTF-16</li>
+      <li>Here are some extra (optional) resources for Number Systems and Character Mapping, if you're not clear on anything: 
+        <ul>
+          <li><a href="https://www.codeproject.com/Articles/4069/Learning-Binary-and-Hexadecimal">A text summary of Number Systems (a long read)</a></li>
+	      <li><a href="https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction">The Khanacademy summary of Number Systems (the short version)</a></li>
+	      <li>For the very confident: <a href="https://www.sporcle.com/games/puckett86/basic">Try this binary-hex conversion game</a></li>	
+          <li><a href="https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/">This article</a> by the founder of GitHub explains the need for Unicode</li>
+	</ul>	    
+      </li>
+    </ol>
+  </div>
+	
+  <!-- Python Loops Lists and String Manipulation -->  
+  <div class="w3-container" id="M1" style="margin-top:30px">  
+    <h1 class="w3-xlarge w3-text-green" style="margin-top:30px"><b>Python Loops, Lists, and Strings</b></h1>
+    <p style="font-weight:initial"></p>
+    <ol style="font-weight:initial">
+      <li>Here's a pretty good <a href="https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567">Python resource</a> for these topics</li>
+      <li>Complete as many of the <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/Python%20Practice%20Exercises/PythonPractice_1.docx">Python Practice Exercises</a> as you can. They are intended to help you develop problem-solving and coding skills. THerefore, it would be a waste of your time to look up or copy others' solutions without attempting the problems yourself</li>
+      <li>Here's some more review of <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/PythonNotes/PythonLists.docx">Python Lists</a>, whether you're learning it for the first time, or just need a refresher, it's good practice for the quiz</li>
+    </ol>
+  </div>
+	  
+  <!-- Functions and Docstrings -->  
+  <div class="w3-container" id="M1" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green" style="margin-top:30px"><b>Python Functions and Docstrings</b></h1>
+    <ol style="font-weight:initial">
+      <li>Functions warm-up <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/PythonNotes/functionsQs.pdf">Here</a></li>
+      <li>Anatomy of a Docstring <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/PythonNotes/docstrings.pdf">Here</a></li>
+      <li>Update your Assignment exercise to include function docstrings</li>
+      <li>Try these for more practice: <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/PythonNotes/docstring_exercises.pdf">(UT CSC108 Worksheet)</a></li>
+    </ol>
+  </div>	
+	
+  <!-- Assessments -->
+  <div class="w3-container" id="M1" style="margin-top:30px">
+    <p style="margin-top:30px"><b><a href="">Assignment 1: March 1 2019</a></b></p>
+    <p><b>Quiz 1: March 8 2019</b>
+      <a href="https://github.com/ICS4U-ICS4C/2018-Fall-4/blob/gh-pages/QTopics/QT1.pdf">Python topics to Review</a>
+	  <div style="font-weight:initial">Note that in addition to Python 'Topics to Review', any material presented in this module is fair 
+		  game for the quiz 
+	  </div>
+    </p>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS4U-ICS4C">github.com/ICS4U-ICS4C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+
+
+<!--END OF PAGE CONTENT-->
+		
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
