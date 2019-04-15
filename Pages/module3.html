@@ -49,84 +49,217 @@
   <!-- Header -->
   <div class="w3-container" style="margin-top:50px" id="">
     <h1 class="w3-xxlarge"><b>Module 3 (April 1-12)</b></h1>
-    <p style="font-weight:initial">This Module will offer an introduction to encryption, file Input/Output, as well as matrices and their applications.
-    </p>
-  </div> 
-	 
-  <!--Python pep8 Style Guide-->	
-  <div class="w3-container" id="M3" style="margin-top:10px">
-    <h1 class="w3-xlarge w3-text-green"><b>Python Style</b></h1>
-    <p style="font-weight:initial"></p>
-    <ul style="font-weight:initial">
-        <li>If you want to learn more about standard style conventions in Python, refer to the <a href="../PythonNotes/pep8.pdf">Python Style Guide</a>. It's a good reference if you're looking for explicit style recommendations. You may like to review the section on comments.
-    </ul>    
-  </div>
-
-  <!--Encryption Intro-->
-  <div class="w3-container" id="M3" style="margin-top:10px">
-    <h1 class="w3-xlarge w3-text-green"><b>Encryption</b></h1>
-    <p style="font-weight:initial">Some recommended resources about encryption</p>
-    <ul style="font-weight:initial">
-      <li><a href="https://www.xarg.org/tools/caesar-cipher/">Caesar Cipher decryption tool</a></li>
-      <li>Here's an interesting <a href="https://www.khanacademy.org/computing/computer-science/cryptography">Khanacademy series</a> about cryptography</li>
-      <li>Simon Singh's <a href="https://simonsingh.net/books/the-code-book/the-book/">The Code Book</a>, about the history of encryption and the secrets of codebreaking, is an excellent read</li>
-      <li><a href="https://www.eff.org/">EFF</a>, is a foundation dedicated to defending digital privacy rights. Check out their 
-	      website and join their mailing list to stay informed about the ever-changing landscape of online privacy</li>
-    </ul>
-    <br>	      
-    </p>
-  </div>
-
-  <!--File IO-->
-  <div class="w3-container" id="M3" style="margin-top:10px">
-    <h1 class="w3-xlarge w3-text-green"><b>File IO and Encryption</b></h1>
-    <p style="font-weight:initial">
-    
-    
-      Can you explain how the secret message, "Hello my name is Simon", was encrypted in each of the following?<br>
-	<ol><li>"Ellohay my amenay is imonsay"</li><li>"Ifmmp nz obnf jt tjnpo"</li><li>"Jraap zu mszr od dozpm"</li></ol>
-      Here's a <a href="https://www.codecademy.com/courses/learn-python/lessons/file-inputoutput/exercises/see-it-to-believe-it">Codecademy tutorial</a> about File I/O for reference
-   
-    <br>	      
-    </p>
-  </div>	
-  
-  <!-- Intro to Matrices -->
-  <div class="w3-container" id="M3" style="margin-top:10px">
-    <h1 class="w3-xlarge w3-text-green"><b>Intro to Matrices and Matrix Operations</b></h1>
-    <p style="font-weight:initial">
-    </p>
-    <ul style="font-weight:initial">
-      <li>Complete the introductory tutorial on Matrices on <a href="https://www.khanacademy.org/math/precalculus/precalc-matrices">Khanacademy</a></li>
-      <li>Whether you just watch the videos, read the notes provided, or find a preferable tutorial on your own, you should be able to complete Khanacademy Quizzes 1, 2, and 3:</li>
-	  <ol>
-	    <ul>Matrix elements, dimensions, representing linear systems, row operations</ul>
-		<ul>Matrix addition and subtraction, scalar multiplication</ul>
-		<ul>Matrix multiplication, transformation</ul>
-	  </ol>
-      <li>What does this have to do with Comp Sci? Read this <a href="https://www.rdmag.com/news/2013/12/matrices-have-broad-ramifications-computer-science">article by Larry Hardesty, MIT</a></li>
-    </ul>
-    <br>	      
+  <p style="font-weight:initial">    </p>
+  </div>	  
+	  
+  <!-- Python Snake -->
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xlarge w3-text-green"><b>Python Snake (just for fun)</b></h1>
+    <p style="font-weight:initial"> 
+      Follow @ericqweinstein's <a href="https://repl.it/talk/learn/Game-Tutorial-SSSnake/8923?ref=newsletter">tutorial</a> to make a Snake game using the terminal 
     </p>
   </div>	
 	
+  <!-- Testing -->
+  <div class="w3-container" id="M4" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Testing Your Code</b></h1>
+    <p style="font-weight:initial"> 
+    Read the following articles from The Hitchhiker's Guide to Python:
+    </p>
+    <ol style="font-weight:initial">
+      <li><a href="https://docs.python-guide.org/writing/structure/">Structuring Your Project</a></li>
+      <li><a href="https://docs.python-guide.org/writing/tests/">Testing Your Code</a></li>
+      <li><a href="https://docs.pytest.org/en/latest/getting-started.html">Examples for using pytest</a></li>
+    </ol>
+  </div>	
 
-    <!--Review for Quiz-->
-    <h1 class="w3-xlarge w3-text-green"><b>Review for Quiz</b></h1> 
-      <ul style="font-weight:initial">
-	<li>Encryption</li>
-	<li>File IO in Python (open, close, read, write)</li>
-	<li>Codecademy tutorial content</li>
-	<li><a href="https://www.programiz.com/python-programming/matrix">See: What is a Matrix? Python Matrices (nested Lists example)</a></li>
-        <li>Khanacademy tutorial content, excluding transformations</li>
-      </ul>
-    <br>	      
-  
-    <p style="margin-top:30px"><b><a href="">Assignment 3: April 12 2019</a></b></p>
-    <p><b>Quiz 3: April 5 2019</b> 
+  <!--Testing Examples-->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Some Testing Examples</b></h1>
+    
+    <!-- Unittest Example -->
+    <figcaption style="margin-top:35px;">Unittest (docs.python-guide.org)</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
+    import unittest
+
+    class TestStringMethods(unittest.TestCase):
+
+        def test_upper(self):
+            self.assertEqual('foo'.upper(), 'FOO')  # Edit FOO to see fail output
+
+        def test_isupper(self):
+            self.assertTrue('FOO'.isupper())
+            self.assertFalse('Foo'.isupper())
+
+        def test_split(self):
+            s = 'hello world'
+            self.assertEqual(s.split(), ['hello', 'world'])
+            # check that s.split fails when the separator is not a string
+            with self.assertRaises(TypeError):
+                s.split(2)
+
+    if __name__ == '__main__':
+        unittest.main()
+    </code></pre>
+
+    <!-- Pytest Example -->
+    <figcaption style="margin-top:35px;">Pytest (https://docs.pytest.org)</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
+    def inc(x):
+        return x + 1
+
+    def test_answer():
+        assert inc(3) == 5 #Fails, since inc(3) is 4, not 5
+    </code></pre>
+
+    <!-- Doctest Example -->
+    <figcaption style="margin-top:35px;">Doctest (https://docs.python-guide.org/)</figcaption>
+    <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial;"> 
+    def square(x):
+        """Return the square of x.
+
+        >>> square(2)
+        4
+        >>> square(-2)
+        4
+        """
+
+        return x * x
+
+    if __name__ == '__main__':
+        import doctest
+        doctest.testmod() # Expect no output if everything passes
+    </code></pre>
+    <a href="https://docs.python.org/3/library/doctest.html#module-doctest" style="font-weight:initial">Here are more thorough examples using doctest</a>
+  </div>
+	
+  <!-- Test Suites -->
+  <div class="w3-container" id="M4" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-green"><b>Creating Test Suites</b></h1>
+    <p style="font-weight:initial"> 
+    Sample exercises from CSC108:
+    </p>
+    <ol style="font-weight:initial">
+      <li><a href="../Exercises/broken_is_teenager.pdf">Is Teenager</a></li>
+      <li><a href="../Exercises/broken_all_fluffy.pdf">All Fluffy</a></li>
+      <li><a href="../Exercises/testing_worksheet.pdf">Choosing Test Cases Worksheet</a></li>
+    </ol>
+  </div>
+	
+  <!-- Student Sample Solutions (testing applied to asst 3:encryption) 
+  <div class="w3-container" style="margin-top:35px">
+  <h1 class="w3-xlarge w3-text-green"><b>Our Class's Brilliant Solutions</b></h1>
+    <p style="font-weight:initial"> 
+      Link to your code to show us something special you did with either encryption or testing or both! 
+    </p>
+    <br>
+    <div class="thirdrow">
+      <div class="excontainer">
+        <a href="../Brilliant/YA.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=YA" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/TA.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=TA" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/AC.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=AC" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/JC.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=JC" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/VG.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=VG" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/NH.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=NH" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/TK.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=TK" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/RP.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=RP" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/KS.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=KS" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/AS.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=AS" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/MS.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=MS" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/MSD.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=MSD" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/HT.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=HT" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/ST.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=ST" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/FW.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=FW" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="excontainer">
+        <a href="../Brilliant/MW.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=MW" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/AZ.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=AZ" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <div class="excontainer">
+        <a href="../Brilliant/SP.html">
+          <img src="https://via.placeholder.com/350x160/4CAF50/FFFFFF?text=SP" alt="Avatar" class="eximage" style="width:100%">
+        </a>
+      </div>
+      <br>
+    </div>
+  </div> -->	  
+
+	  
+	  
+    <p style="margin-top:30px"><b><a href="">Assignment 3: April TBD 2019</a></b></p>
+    <p><b>Quiz 3: TBD 2019</b> 
       <a href="https://github.com/ICS4U-ICS4C/2019-Spring-4/blob/gh-pages/QTopics/QT3.pdf">Python topics to Review</a>
  	<div style="font-weight:initial">Note that in addition to Python 'Topics to Review', any material presented in this module is fair 
-		  game for the quiz (including Matrices)
+		  game for the quiz
 	</div>
     </p>
   </div>
