@@ -93,20 +93,20 @@
 		  
       <figcaption style="margin-top:35px;"></figcaption>
       <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
-"""
-For a summary of file input/output in Python:
-https://www.tutorialspoint.com/python/python_files_io.htm
-Pay attention to placement of file pointer for various access modes
+	"""
+	For a summary of file input/output in Python:
+	https://www.tutorialspoint.com/python/python_files_io.htm
+	Pay attention to placement of file pointer for various access modes
 
-"""
+	"""
 
-filename = input("name your doc for your marks") #will create file if it doesn't already exist
-numEntries = int(input("how many marks you got?"))
-f=open(filename+".txt",'w')  #'a' will append instead of overwrite
+	filename = input("name your doc for your marks") #will create file if it doesn't already exist
+	numEntries = int(input("how many marks you got?"))
+	f=open(filename+".txt",'w')  #'a' will append instead of overwrite
 
-for mark in range(numEntries):
-    f.write(input("Enter your marks: ")+"\n")
-f.close()
+	for mark in range(numEntries):
+    	    f.write(input("Enter your marks: ")+"\n")
+	f.close()
       </code></pre>
       <br>
 		  
