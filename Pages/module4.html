@@ -68,10 +68,8 @@
   <div class="w3-container" id="M3" style="margin-top:10px">
     <h1 class="w3-xlarge w3-text-green"><b>Encryption</b></h1>
 <p style="font-weight:initial">	      
-      Can you explain how the secret message, "Hello my name is Simon", was encrypted in each of the following?<p><br>
-	<ol><li>"Ellohay my amenay is imonsay"</li><li>"Ifmmp nz obnf jt tjnpo"</li><li>"Jraap zu mszr od dozpm"</li></ol>
-      Here's a <a href="https://www.codecademy.com/courses/learn-python/lessons/file-inputoutput/exercises/see-it-to-believe-it">Codecademy tutorial</a> about File I/O for reference
-
+      Can you explain how the secret message, "Hello my name is Simon", was encrypted in each of the following?<br>
+	<ol><li>"Ellohay my amenay is imonsay"</li><li>"Ifmmp nz obnf jt tjnpo"</li><li>"Jraap zu mszr od dozpm"</li></ol></p>
     <p style="font-weight:initial">Some recommended resources about encryption</p>
     <ul style="font-weight:initial">
       <li><a href="https://www.xarg.org/tools/caesar-cipher/">Caesar Cipher decryption tool</a></li>
@@ -88,8 +86,31 @@
   <div class="w3-container" id="M3" style="margin-top:10px">
 	  <h1 class="w3-xlarge w3-text-green"><b>File IO Basics/b></h1>
     
-   
-    <br>	      
+		  <!-- File IO Demo -->
+
+		  
+		  
+      <figcaption style="margin-top:35px;"></figcaption>
+      <pre class="prettyprint"><code style="font-family: monospace;font-weight:initial"> 
+"""
+For a summary of file input/output in Python:
+https://www.tutorialspoint.com/python/python_files_io.htm
+Pay attention to placement of file pointer for various access modes
+
+"""
+
+filename = input("name your doc for your marks") #will create file if it doesn't already exist
+numEntries = int(input("how many marks you got?"))
+f=open(filename+".txt",'w')  #'a' will append instead of overwrite
+
+for mark in range(numEntries):
+    f.write(input("Enter your marks: ")+"\n")
+f.close()
+      </code></pre>
+      <br>
+		  
+      <p ztyle="font-weight:initial">Here's a <a href="https://www.codecademy.com/courses/learn-python/lessons/file-inputoutput/exercises/see-it-to-believe-it">Codecademy tutorial</a> about File I/O for reference
+    </p><br>	      
   </div>	
   
   <!-- Intro to Matrices -->
